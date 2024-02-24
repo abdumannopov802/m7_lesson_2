@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<h2> {{book.title}} </h2>
+<h5> writen by: <b> {{book.author}}</b>, in year: <b>{{ book.year }}</b></h4>
+<hr>
+<img src="{{ book.image.url }}"></img>
+<p> 
+    {{ book.description }}
+</p>
+{% endblock %}
